@@ -8,10 +8,7 @@
  * Controller of the myAngularProjectApp
  */
 angular.module('myAngularProjectApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', function ($scope) {
+       // attaching 0 to the DOM
+      $scope.somenumber = 320;
+  }]);
