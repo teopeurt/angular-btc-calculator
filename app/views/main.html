@@ -54,10 +54,19 @@
           <span>* IF the price of 1 Bitcoin reaches X, THEN your starting investment becomes X AND your profit becomes X.</span>
         </div>
       </div>
-<div class="row">
-  <div class="col-sm-12">
-    <nvd3-historical-bar-chart height="350" data="exampleData" showXAxis="true" showYAxis="true" showLegend="true">
-    </nvd3-historical-bar-chart>
-  </div>
-</div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <nvd3-line-chart
+            data="bitcoinHistoricalData"
+            xAxisTickFormat="xAxisTickFormatFunction()"
+            height="350"
+            showXAxis="true"
+            showYAxis="true"
+            isArea="true"
+            useInteractiveGuideLine="true">
+          <svg></svg>
+        </div>
+      </div>
+
 </div>
