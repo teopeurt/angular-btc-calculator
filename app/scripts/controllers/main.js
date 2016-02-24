@@ -22,5 +22,17 @@ angular.module('myAngularProjectApp')
             $scope.initalAmt  = 5000;
             $scope.newAmt     = function(price){return price/$scope.currRate * $scope.initalAmt;}
             $scope.profit     = function(price){return price/$scope.currRate * $scope.initalAmt - $scope.initalAmt;}
-      });      
+      });    
+      
+      $scope.exampleData = [{
+       "key": "Quantity",
+       "bar": true,
+       "values": [
+         [10, 20],
+         [20, 40],
+         [30, 60],
+         [40, 80],
+         [50, 100]
+       ] 
+      }];  
   });
